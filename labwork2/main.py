@@ -1,5 +1,6 @@
 from math import sqrt
 from numpy import random
+from numpy.random import random_integers
 
 from form import m, mg, n, sample_size
 
@@ -20,5 +21,12 @@ def dispertion_population_by_sample(x, Ys, m):
     return S2
 
 
-if __name__ == "__main__":
-    x = []
+x = random_integers(10+m, mg + 2 * m, n)
+sum_population_by_sample(x)
+average_population_by_sample(x)
+dispertion_population_by_sample()
+
+print(sum_population_by_sample())
+
+# if __name__ == "__main__":
+#     x = []
